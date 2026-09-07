@@ -18,6 +18,6 @@ public class OpenApiConfig {
                         .title("sun-moon-java-platform-delivery API")
                         .description("Delivery assignment/tracking for the sun-moon-java-platform family.")
                         .version("0.1.0"))
-                .servers(List.of(new Server().url("/")));
+                .servers(List.of(new Server().url("/delivery")));
     }
 }
