@@ -1,0 +1,22 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: sun-moon-java-platform-delivery
+  datasource:
+    url: jdbc:postgresql://localhost:5432/delivery_service
+    username: sunmoon
+    password: sunmoon_dev_pw
+  sql:
+    init:
+      mode: always
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,prometheus,info
+  endpoint:
+    health:
+      show-details: always
